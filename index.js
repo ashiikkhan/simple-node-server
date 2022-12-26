@@ -20,15 +20,7 @@ const users = [
     {id: 02, name: "mr. y", email: "mry@gmail.com"}, 
     {id: 03, name: "mr. z", email: "mrz@gmail.com"}
 ]; 
-/**
- * database MongoDB:
- * user: dbUser1
- * password: eOg3s7gXS4pvVqEH 
- */
 
-
-
-const uri = "mongodb+srv://dbUser1:eOg3s7gXS4pvVqEH@cluster0.fedentp.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 async function run() {
